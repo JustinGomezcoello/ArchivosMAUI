@@ -12,7 +12,7 @@ namespace ArchivosMAUI
         public MainPage()
         {
             InitializeComponent();
-            _estudianteUdlaRepository = new EstudianteUdlaFilesRepository();
+            _estudianteUdlaRepository = new EstudianteUdlaFilesRepository();   //aqui si quiero ahora hacer con base de datos pues tengo que llamar al repositorio nuevo de base de datos
             estudiante = _estudianteUdlaRepository.DevuelveInfoEstudiante(1);
             BindingContext = estudiante;
         }
