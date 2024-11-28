@@ -12,7 +12,7 @@ namespace ArchivosMAUI.Interfaces
         bool CrearEstudianteUDLA(EstudianteUDLA estudiante);
         bool ActualizarEstudianteUDLA(EstudianteUDLA estudiante);
         bool EliminarEstudianteUDLA(int Id);
-        IEnumerable<EstudianteUDLA> DevuelveListadoEstudiantesUDLA();
+        Task<IEnumerable<EstudianteUDLA>> DevuelveListadoEstudiantesUDLA();
         EstudianteUDLA DevuelveInfoEstudiante(int Id);
 
     }
